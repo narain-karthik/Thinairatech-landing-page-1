@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thinairatech</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="leaves" id="leaves" aria-hidden="true"></div>
+
+  <main class="stage">
+    <header class="hero">
+      <h1 class="brand" id="brand" aria-label="Thinairatech">Thinairatech</h1>
+      <p class="soon" aria-label="Landing soon">
+        Landing soon<span class="dots" aria-hidden="true"><i>.</i><i>.</i><i>.</i><i>.</i></span>
+      </p>
+    </header>
+
+    <svg class="scene" id="scene" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMax slice" role="img" aria-label="Funny cartoon animation">
+      <defs>
+        <clipPath id="clipCarrot"><rect x="-50" y="-120" width="100" height="122"/></clipPath>
+      </defs>
+
+      <!-- sparkles -->
+      <g class="sparkles" fill="none" stroke-width="4" stroke-linecap="round">
+        <path class="tw t1" d="M120 200 h14 M127 193 v14" stroke="#29A3E0"/>
+        <path class="tw t2" d="M1090 120 h14 M1097 113 v14" stroke="#FF8A3D"/>
+        <path class="tw t3" d="M880 255 h12 M886 249 v12" stroke="#7C5CFF"/>
+        <path class="tw t4" d="M330 265 h12 M336 259 v12" stroke="#58B226"/>
+        <path class="tw t5" d="M700 205 h12 M706 199 v12" stroke="#FFC93C"/>
+      </g>
+
+      <!-- sun -->
+      <g transform="translate(1010 150)">
+        <g class="sun-rays" stroke="#FF8A3D" stroke-width="6" stroke-linecap="round">
+          <path d="M0 -52 V-68" transform="rotate(0)"/><path d="M0 -52 V-68" transform="rotate(30)"/>
+          <path d="M0 -52 V-68" transform="rotate(60)"/><path d="M0 -52 V-68" transform="rotate(90)"/>
+          <path d="M0 -52 V-68" transform="rotate(120)"/><path d="M0 -52 V-68" transform="rotate(150)"/>
+          <path d="M0 -52 V-68" transform="rotate(180)"/><path d="M0 -52 V-68" transform="rotate(210)"/>
+          <path d="M0 -52 V-68" transform="rotate(240)"/><path d="M0 -52 V-68" transform="rotate(270)"/>
+          <path d="M0 -52 V-68" transform="rotate(300)"/><path d="M0 -52 V-68" transform="rotate(330)"/>
+        </g>
+        <circle r="40" fill="#FFC93C" stroke="#FF9F1C" stroke-width="5"/>
+        <circle cx="-22" cy="8" r="7" fill="#FF8A3D" opacity=".35"/>
+        <circle cx="22" cy="8" r="7" fill="#FF8A3D" opacity=".35"/>
+        <ellipse class="blink" cx="-13" cy="-6" rx="4" ry="6" fill="#1d3a10"/>
+        <ellipse class="blink" cx="13" cy="-6" rx="4" ry="6" fill="#1d3a10"/>
+        <path d="M-12 8 Q0 22 12 8" stroke="#1d3a10" stroke-width="4" fill="none" stroke-linecap="round"/>
+      </g>
+
+      <!-- clouds -->
+      <g class="clouds" id="clouds">
+        <g transform="translate(70 230)"><g class="cloud drift-a">
+          <path d="M0 40 Q-10 15 20 15 Q25 -10 55 0 Q80 -15 95 10 Q125 10 120 40Z" fill="#fff" stroke="#BFE3FA" stroke-width="5" stroke-linejoin="round"/>
+        </g></g>
+        <g transform="translate(740 160)"><g class="cloud drift-b">
+          <path d="M0 50 Q-12 20 24 20 Q30 -12 66 0 Q96 -18 114 12 Q150 14 144 50Z" fill="#fff" stroke="#BFE3FA" stroke-width="5" stroke-linejoin="round"/>
+          <ellipse class="blink" cx="58" cy="32" rx="3.5" ry="5" fill="#1d3a10"/>
+          <ellipse class="blink" cx="84" cy="32" rx="3.5" ry="5" fill="#1d3a10"/>
+          <path d="M62 40 Q71 48 80 40" stroke="#1d3a10" stroke-width="3" fill="none" stroke-linecap="round"/>
+        </g></g>
+        <g transform="translate(400 215)"><g class="cloud drift-c">
+          <path d="M0 34 Q-8 12 16 12 Q22 -8 46 0 Q66 -10 78 8 Q102 10 98 34Z" fill="#fff" stroke="#CFEFB3" stroke-width="5" stroke-linejoin="round"/>
+        </g></g>
+      </g>
+
+      <!-- plane -->
+      <g class="plane-fly">
+        <g class="plane-bob">
+          <path d="M-100 4 Q-160 -18 -210 6 T-320 6" stroke="#9FD5F5" stroke-width="6" fill="none" stroke-dasharray="2 14" stroke-linecap="round"/>
+          <path d="M-60 -6 L-96 -40 L-72 -40 L-40 -16Z" fill="#FF8A3D" stroke="#C85F1E" stroke-width="5" stroke-linejoin="round"/>
+          <ellipse cx="0" cy="0" rx="68" ry="27" fill="#fff" stroke="#1B78AA" stroke-width="5"/>
+          <path d="M-52 10 Q0 24 56 10" stroke="#FFC93C" stroke-width="8" fill="none" stroke-linecap="round"/>
+          <path d="M-12 10 L-44 52 L-8 52 L26 10Z" fill="#29A3E0" stroke="#1B78AA" stroke-width="5" stroke-linejoin="round"/>
+          <circle cx="14" cy="-6" r="10" fill="#fff" stroke="#1B78AA" stroke-width="4"/>
+          <circle cx="40" cy="-6" r="10" fill="#fff" stroke="#1B78AA" stroke-width="4"/>
+          <circle class="pupil" cx="16" cy="-5" r="4.5" fill="#1d3a10"/>
+          <circle class="pupil" cx="42" cy="-5" r="4.5" fill="#1d3a10"/>
+          <path d="M18 10 Q32 24 48 10" stroke="#1d3a10" stroke-width="4" fill="#fff" stroke-linecap="round"/>
+          <circle cx="70" cy="0" r="7" fill="#F05A4F" stroke="#9E2F27" stroke-width="4"/>
+          <ellipse class="prop" cx="76" cy="0" rx="4" ry="22" fill="#2b3a42"/>
+        </g>
+      </g>
+
+      <!-- mountains -->
+      <g stroke-linejoin="round">
+        <path d="M-80 500 L170 350 L420 500Z" fill="#8DBDEB"/>
+        <path d="M170 350 L420 500 H250Z" fill="#6FA3D8"/>
+        <path d="M170 350 L140 371 L157 367 L170 381 L186 366 L202 374Z" fill="#fff"/>
+
+        <path d="M240 500 L500 300 L780 500Z" fill="#7FB2E5"/>
+        <path d="M500 300 L780 500 H570Z" fill="#5F95CF"/>
+        <path d="M500 300 L462 330 L484 324 L500 342 L520 324 L540 334Z" fill="#fff"/>
+
+        <path d="M600 500 L840 345 L1060 500Z" fill="#9AC6EE"/>
+        <path d="M840 345 L1060 500 H900Z" fill="#78AEE0"/>
+        <path d="M840 345 L812 364 L828 360 L842 372 L856 360 L870 368Z" fill="#fff"/>
+
+        <path d="M880 500 L1100 315 L1340 500Z" fill="#86B8E8"/>
+        <path d="M1100 315 L1340 500 H1170Z" fill="#6A9FD6"/>
+        <path d="M1100 315 L1066 342 L1084 336 L1100 352 L1118 336 L1136 346Z" fill="#fff"/>
+      </g>
+
+      <!-- foothills + back hill -->
+      <path d="M0 490 C120 440 240 460 330 488 C440 430 560 450 640 480 C760 435 880 455 980 484 C1060 450 1140 462 1200 480 V540 H0Z" fill="#A5D88A"/>
+      <path d="M0 486 Q300 462 600 482 T1200 472 V600 H0Z" fill="#CFEFB3"/>
+
+      <!-- railway -->
+      <rect x="-10" y="490" width="1220" height="14" fill="#D6C7AC"/>
+      <path d="M-10 498 H1210" stroke="#8B5E3C" stroke-width="8" stroke-dasharray="8 14"/>
+      <path d="M-10 491 H1210" stroke="#4A5866" stroke-width="4"/>
+
+      <!-- train -->
+      <g transform="translate(0 490)">
+        <g class="train">
+          <g class="train-bob">
+            <!-- wagon 2 -->
+            <rect x="-290" y="-50" width="92" height="38" rx="7" fill="#FF8A3D" stroke="#C85F1E" stroke-width="4"/>
+            <rect x="-282" y="-42" width="20" height="18" rx="5" fill="#fff"/>
+            <rect x="-256" y="-42" width="20" height="18" rx="5" fill="#fff"/>
+            <rect x="-230" y="-42" width="20" height="18" rx="5" fill="#fff"/>
+            <rect x="-290" y="-16" width="92" height="6" fill="#2b3a42"/>
+            <g transform="translate(-270 -9)"><g class="wheel"><circle r="9" fill="#2b3a42"/><circle r="3.5" fill="#CFD8E0"/><path d="M-9 0 H9 M0 -9 V9" stroke="#8795A1" stroke-width="2"/></g></g>
+            <g transform="translate(-218 -9)"><g class="wheel"><circle r="9" fill="#2b3a42"/><circle r="3.5" fill="#CFD8E0"/><path d="M-9 0 H9 M0 -9 V9" stroke="#8795A1" stroke-width="2"/></g></g>
+            <!-- wagon 1 -->
+            <rect x="-186" y="-50" width="92" height="38" rx="7" fill="#58B226" stroke="#2F7A12" stroke-width="4"/>
+            <rect x="-178" y="-42" width="20" height="18" rx="5" fill="#fff"/>
+            <rect x="-152" y="-42" width="20" height="18" rx="5" fill="#fff"/>
+            <rect x="-126" y="-42" width="20" height="18" rx="5" fill="#fff"/>
+            <g class="passenger"><circle cx="-142" cy="-28" r="7" fill="#FFE0BD" stroke="#C9936A" stroke-width="2"/><circle cx="-144.5" cy="-29" r="1.3" fill="#1d3a10"/><circle cx="-139.5" cy="-29" r="1.3" fill="#1d3a10"/><path d="M-145 -25 Q-142 -22 -139 -25" stroke="#1d3a10" stroke-width="1.5" fill="none"/></g>
+            <rect x="-186" y="-16" width="92" height="6" fill="#2b3a42"/>
+            <g transform="translate(-166 -9)"><g class="wheel"><circle r="9" fill="#2b3a42"/><circle r="3.5" fill="#CFD8E0"/><path d="M-9 0 H9 M0 -9 V9" stroke="#8795A1" stroke-width="2"/></g></g>
+            <g transform="translate(-114 -9)"><g class="wheel"><circle r="9" fill="#2b3a42"/><circle r="3.5" fill="#CFD8E0"/><path d="M-9 0 H9 M0 -9 V9" stroke="#8795A1" stroke-width="2"/></g></g>
+            <!-- couplings -->
+            <path d="M-198 -22 H-186 M-94 -22 H-70" stroke="#2b3a42" stroke-width="5" stroke-linecap="round"/>
+            <!-- smoke -->
+            <g transform="translate(13 -86)">
+              <circle class="puff p1" r="8" fill="#fff" stroke="#D5E3EE" stroke-width="3"/>
+              <circle class="puff p2" r="8" fill="#fff" stroke="#D5E3EE" stroke-width="3"/>
+              <circle class="puff p3" r="8" fill="#fff" stroke="#D5E3EE" stroke-width="3"/>
+            </g>
+            <!-- locomotive -->
+            <rect x="-70" y="-70" width="38" height="52" rx="6" fill="#29A3E0" stroke="#1B78AA" stroke-width="4"/>
+            <rect x="-62" y="-60" width="22" height="16" rx="4" fill="#fff"/>
+            <rect x="-76" y="-78" width="50" height="10" rx="4" fill="#F05A4F"/>
+            <rect x="-34" y="-58" width="66" height="38" rx="14" fill="#FFC93C" stroke="#D99A00" stroke-width="4"/>
+            <path d="M6 -58 V-74 H20 V-58Z" fill="#2b3a42"/>
+            <rect x="1" y="-82" width="24" height="9" rx="3" fill="#F05A4F"/>
+            <circle cx="4" cy="-42" r="6.5" fill="#fff"/><circle cx="20" cy="-42" r="6.5" fill="#fff"/>
+            <circle class="pupil" cx="5.5" cy="-41" r="3" fill="#1d3a10"/><circle class="pupil" cx="21.5" cy="-41" r="3" fill="#1d3a10"/>
+            <path d="M5 -30 Q12 -22 21 -30" stroke="#1d3a10" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+            <polygon points="30,-24 48,-12 30,-12" fill="#2b3a42"/>
+            <rect x="-70" y="-20" width="102" height="8" rx="3" fill="#2b3a42"/>
+            <path d="M-50 -11 H-22" stroke="#FF8A3D" stroke-width="4" stroke-linecap="round"/>
+            <g transform="translate(-50 -11)"><g class="wheel"><circle r="11" fill="#2b3a42"/><circle r="4" fill="#CFD8E0"/><path d="M-11 0 H11 M0 -11 V11" stroke="#8795A1" stroke-width="2"/></g></g>
+            <g transform="translate(-22 -11)"><g class="wheel"><circle r="11" fill="#2b3a42"/><circle r="4" fill="#CFD8E0"/><path d="M-11 0 H11 M0 -11 V11" stroke="#8795A1" stroke-width="2"/></g></g>
+            <g transform="translate(14 -8)"><g class="wheel"><circle r="8" fill="#2b3a42"/><circle r="3" fill="#CFD8E0"/><path d="M-8 0 H8 M0 -8 V8" stroke="#8795A1" stroke-width="2"/></g></g>
+          </g>
+        </g>
+      </g>
+
+      <!-- front hill -->
+      <path d="M0 530 Q250 504 520 524 T1200 514 V600 H0Z" fill="#58B226"/>
+      <g stroke="#2F7A12" stroke-width="4" stroke-linecap="round" fill="none">
+        <path d="M60 540 q4 -16 0 -22 M70 540 q-2 -12 6 -18"/>
+        <path d="M440 542 q4 -16 0 -22 M450 542 q-2 -12 6 -18"/>
+        <path d="M780 538 q4 -16 0 -22 M790 538 q-2 -12 6 -18"/>
+        <path d="M1130 534 q4 -16 0 -22 M1140 534 q-2 -12 6 -18"/>
+      </g>
+
+      <!-- ================= FARM CORNER ================= -->
+      <!-- sunflower -->
+      <g transform="translate(135 536)">
+        <g class="char" data-hop>
+          <g class="hopper">
+            <g class="sway2">
+              <path d="M0 0 V-100" stroke="#3E9A1B" stroke-width="7" stroke-linecap="round"/>
+              <path d="M0 -34 C-24 -52 -42 -40 -42 -30 C-28 -26 -10 -28 0 -34Z" fill="#7BD13F" stroke="#2F7A12" stroke-width="3" stroke-linejoin="round"/>
+              <path d="M0 -52 C24 -70 42 -58 42 -48 C28 -44 10 -46 0 -52Z" fill="#7BD13F" stroke="#2F7A12" stroke-width="3" stroke-linejoin="round"/>
+              <g transform="translate(0 -116)">
+                <g fill="#FFC93C" stroke="#E69A00" stroke-width="2.5">
+                  <ellipse cx="0" cy="-26" rx="8" ry="14" transform="rotate(0)"/>
+                  <ellipse cx="0" cy="-26" rx="8" ry="14" transform="rotate(30)"/>
+                  <ellipse cx="0" cy="-26" rx="8" ry="14" transform="rotate(60)"/>
+                  <ellipse cx="0" cy="-26" rx="8" ry="14" transform="rotate(90)"/>
+                  <ellipse cx="0" cy="-26" rx="8" ry="14" transform="rotate(120)"/>
+                  <ellipse cx="0" cy="-26" rx="8" ry="14" transform="rotate(150)"/>
+                  <ellipse cx="0" cy="-26" rx="8" ry="14" transform="rotate(180)"/>
+                  <ellipse cx="0" cy="-26" rx="8" ry="14" transform="rotate(210)"/>
+                  <ellipse cx="0" cy="-26" rx="8" ry="14" transform="rotate(240)"/>
+                  <ellipse cx="0" cy="-26" rx="8" ry="14" transform="rotate(270)"/>
+                  <ellipse cx="0" cy="-26" rx="8" ry="14" transform="rotate(300)"/>
+                  <ellipse cx="0" cy="-26" rx="8" ry="14" transform="rotate(330)"/>
+                </g>
+                <circle r="19" fill="#8B5A2B" stroke="#5E3A1A" stroke-width="3"/>
+                <ellipse class="blink" cx="-7" cy="-4" rx="3" ry="4.5" fill="#FFF3D6"/>
+                <ellipse class="blink" cx="7" cy="-4" rx="3" ry="4.5" fill="#FFF3D6"/>
+                <path d="M-7 6 Q0 13 7 6" stroke="#FFF3D6" stroke-width="3" fill="none" stroke-linecap="round"/>
+              </g>
+            </g>
+          </g>
+          <ellipse cx="0" cy="3" rx="26" ry="8" fill="#2F7A12"/>
+        </g>
+      </g>
+
+      <!-- rain cloud -->
+      <g transform="translate(240 335)">
+        <g class="raincloud">
+          <path d="M-50 14 Q-60 -8 -34 -8 Q-28 -30 -2 -22 Q22 -36 36 -12 Q62 -10 56 14Z" fill="#EAF6FF" stroke="#7FB9E8" stroke-width="4" stroke-linejoin="round"/>
+          <path d="M-18 -2 q4 -6 8 0 M8 -2 q4 -6 8 0" stroke="#1d3a10" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <path d="M-6 6 Q0 12 6 6" stroke="#1d3a10" stroke-width="3" fill="none" stroke-linecap="round"/>
+        </g>
+        <g transform="translate(-24 22)"><path class="drop d1" d="M0 -7 C5 0 6 5 0 8 C-6 5 -5 0 0 -7Z" fill="#29A3E0"/></g>
+        <g transform="translate(0 22)"><path class="drop d2" d="M0 -7 C5 0 6 5 0 8 C-6 5 -5 0 0 -7Z" fill="#4FB6EA"/></g>
+        <g transform="translate(24 22)"><path class="drop d3" d="M0 -7 C5 0 6 5 0 8 C-6 5 -5 0 0 -7Z" fill="#29A3E0"/></g>
+      </g>
+
+      <!-- sprout buddy -->
+      <g transform="translate(240 536)">
+        <g class="char" data-hop>
+          <g class="hopper">
+            <g class="sway">
+              <g class="leaf-pair">
+                <path d="M0 -92 C-8 -128 -44 -142 -58 -122 C-42 -104 -20 -98 0 -92Z" fill="#7BD13F" stroke="#2F7A12" stroke-width="4" stroke-linejoin="round"/>
+                <path d="M0 -92 C8 -128 44 -142 58 -122 C42 -104 20 -98 0 -92Z" fill="#7BD13F" stroke="#2F7A12" stroke-width="4" stroke-linejoin="round"/>
+                <path d="M0 -92 C-6 -112 -22 -122 -32 -118 M0 -92 C6 -112 22 -122 32 -118" stroke="#2F7A12" stroke-width="2" fill="none" stroke-linecap="round" opacity=".6"/>
+              </g>
+              <path d="M-40 0 Q-42 -96 0 -96 Q42 -96 40 0Z" fill="#58B226" stroke="#2F7A12" stroke-width="5" stroke-linejoin="round"/>
+              <circle cx="-24" cy="-38" r="8" fill="#FFB3A7" opacity=".7"/>
+              <circle cx="24" cy="-38" r="8" fill="#FFB3A7" opacity=".7"/>
+              <ellipse class="blink" cx="-14" cy="-56" rx="6" ry="9" fill="#1d3a10"/>
+              <ellipse class="blink" cx="14" cy="-56" rx="6" ry="9" fill="#1d3a10"/>
+              <circle cx="-12" cy="-60" r="2.2" fill="#fff"/>
+              <circle cx="16" cy="-60" r="2.2" fill="#fff"/>
+              <path d="M-11 -38 Q0 -24 11 -38 Z" fill="#fff" stroke="#1d3a10" stroke-width="3.5" stroke-linejoin="round"/>
+            </g>
+          </g>
+          <ellipse cx="0" cy="4" rx="56" ry="13" fill="#2F7A12"/>
+          <ellipse cx="0" cy="0" rx="50" ry="9" fill="#7A4E2D"/>
+        </g>
+      </g>
+
+      <!-- bee -->
+      <g transform="translate(240 450)">
+        <g class="bee">
+          <animateMotion dur="7s" repeatCount="indefinite" path="M0,0 C40,-50 90,-50 90,0 C90,50 40,50 0,0 C-40,-50 -90,-50 -90,0 C-90,50 -40,50 0,0Z"/>
+          <ellipse class="wing" cx="-3" cy="-9" rx="6" ry="8" fill="#fff" stroke="#7FB9E8" stroke-width="2"/>
+          <ellipse class="wing" cx="5" cy="-9" rx="6" ry="8" fill="#fff" stroke="#7FB9E8" stroke-width="2"/>
+          <ellipse cx="0" cy="0" rx="10" ry="7.5" fill="#FFC93C" stroke="#2b3a42" stroke-width="2.5"/>
+          <path d="M-3 -6 V6 M4 -6 V6" stroke="#2b3a42" stroke-width="3"/>
+          <circle cx="7" cy="-2" r="2" fill="#2b3a42"/>
+          <path d="M-10 0 l-4 2" stroke="#2b3a42" stroke-width="2.5" stroke-linecap="round"/>
+        </g>
+      </g>
+
+      <!-- carrot -->
+      <g transform="translate(345 538)">
+        <g class="char" data-hop>
+          <g class="hopper">
+            <g clip-path="url(#clipCarrot)">
+              <g class="peek">
+                <ellipse cx="0" cy="-52" rx="5" ry="17" fill="#7BD13F" stroke="#2F7A12" stroke-width="2.5" transform="rotate(-28 0 -38)"/>
+                <ellipse cx="0" cy="-52" rx="5" ry="17" fill="#7BD13F" stroke="#2F7A12" stroke-width="2.5" transform="rotate(28 0 -38)"/>
+                <ellipse cx="0" cy="-54" rx="5.5" ry="19" fill="#58B226" stroke="#2F7A12" stroke-width="2.5"/>
+                <path d="M-17 4 Q-19 -34 0 -38 Q19 -34 17 4Z" fill="#FF8A3D" stroke="#C85F1E" stroke-width="4" stroke-linejoin="round"/>
+                <path d="M-12 -16 h8 M4 -8 h8" stroke="#C85F1E" stroke-width="2.5" stroke-linecap="round" opacity=".6"/>
+                <ellipse class="blink" cx="-6" cy="-24" rx="2.6" ry="3.6" fill="#1d3a10"/>
+                <ellipse class="blink" cx="6" cy="-24" rx="2.6" ry="3.6" fill="#1d3a10"/>
+                <path d="M-5 -16 Q0 -11 5 -16" stroke="#1d3a10" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+              </g>
+            </g>
+          </g>
+          <ellipse cx="0" cy="2" rx="28" ry="8" fill="#7A4E2D"/>
+          <ellipse cx="0" cy="-1" rx="24" ry="6" fill="#2F7A12"/>
+        </g>
+      </g>
+
+      <!-- ================= CYBER GUARD ================= -->
+      <g transform="translate(600 534)">
+        <ellipse cx="0" cy="2" rx="58" ry="10" fill="#2F7A12" opacity=".5"/>
+        <path class="shield" d="M0 -172 C36 -154 66 -150 84 -150 V-96 C84 -48 44 -18 0 0 C-44 -18 -84 -48 -84 -96 V-150 C-66 -150 -36 -154 0 -172Z" fill="#7C5CFF" fill-opacity=".1" stroke="#7C5CFF" stroke-width="4" stroke-dasharray="10 8" stroke-linejoin="round"/>
+        <g class="ring-spin"><circle cx="0" cy="-76" r="108" fill="none" stroke="#29A3E0" stroke-width="3" stroke-dasharray="3 16" stroke-linecap="round"/></g>
+        <circle class="pulse" cx="0" cy="-76" r="60" fill="none" stroke="#7C5CFF" stroke-width="4"/>
+        <text class="bit b1" x="-98" y="-40" font-family="Fredoka, monospace" font-size="18" font-weight="700" fill="#7C5CFF">1</text>
+        <text class="bit b2" x="-76" y="-20" font-family="Fredoka, monospace" font-size="16" font-weight="700" fill="#29A3E0">0</text>
+        <text class="bit b3" x="84" y="-30" font-family="Fredoka, monospace" font-size="18" font-weight="700" fill="#29A3E0">0</text>
+        <text class="bit b4" x="102" y="-10" font-family="Fredoka, monospace" font-size="16" font-weight="700" fill="#7C5CFF">1</text>
+
+        <g class="char" data-hop>
+          <g class="hopper">
+            <g class="shake">
+              <path class="shackle" d="M-26 -70 V-96 a26 26 0 0 1 52 0 V-70" stroke="#2F7A12" stroke-width="13" fill="none" stroke-linecap="round"/>
+              <rect x="-46" y="-76" width="92" height="74" rx="18" fill="#58B226" stroke="#2F7A12" stroke-width="5"/>
+              <path d="M-40 -14 Q0 -4 40 -14" stroke="#7BD13F" stroke-width="5" fill="none" stroke-linecap="round" opacity=".8"/>
+              <rect x="-36" y="-60" width="32" height="20" rx="8" fill="#1d3a10"/>
+              <rect x="4" y="-60" width="32" height="20" rx="8" fill="#1d3a10"/>
+              <rect x="-6" y="-56" width="12" height="5" fill="#1d3a10"/>
+              <path d="M-30 -55 l8 0" stroke="#4FB6EA" stroke-width="3" stroke-linecap="round"/>
+              <path d="M10 -55 l8 0" stroke="#4FB6EA" stroke-width="3" stroke-linecap="round"/>
+              <path d="M-14 -24 Q0 -10 14 -24" stroke="#1d3a10" stroke-width="4" fill="none" stroke-linecap="round"/>
+              <circle cx="-30" cy="-26" r="6" fill="#FFB3A7" opacity=".7"/>
+              <circle cx="30" cy="-26" r="6" fill="#FFB3A7" opacity=".7"/>
+            </g>
+          </g>
+        </g>
+        <!-- verified badge -->
+        <g transform="translate(46 -84)"><g class="badge">
+          <circle r="14" fill="#29A3E0" stroke="#fff" stroke-width="3"/>
+          <path d="M-6 0 L-2 5 L7 -5" stroke="#fff" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </g></g>
+        <!-- laser eye -->
+        <path class="laser" d="M-30 -50 L-92 -36" stroke="#F05A4F" stroke-width="4" stroke-linecap="round"/>
+        <!-- zap -->
+        <g transform="translate(-66 -40)"><g class="zap">
+          <polygon points="0,-18 5,-6 18,-6 8,3 12,16 0,8 -12,16 -8,3 -18,-6 -5,-6" fill="#FFC93C" stroke="#FF8A3D" stroke-width="4" stroke-linejoin="round"/>
+        </g></g>
+        <!-- bug -->
+        <g transform="translate(0 -34)"><g class="bug">
+          <g stroke="#9E2F27" stroke-width="3" stroke-linecap="round">
+            <path d="M-8 8 l-8 10 M0 10 v12 M8 8 l8 10 M-8 -8 l-8 -10 M8 -8 l8 -10 M-4 -10 l-4 -14"/>
+          </g>
+          <ellipse cx="0" cy="0" rx="17" ry="13" fill="#E5484D" stroke="#9E2F27" stroke-width="3"/>
+          <circle cx="-6" cy="-3" r="4" fill="#fff"/><circle cx="6" cy="-3" r="4" fill="#fff"/>
+          <circle cx="-5" cy="-3" r="2" fill="#1d3a10"/><circle cx="7" cy="-3" r="2" fill="#1d3a10"/>
+          <path d="M-9 -9 l6 3 M9 -9 l-6 3" stroke="#1d3a10" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M-5 6 Q0 2 5 6" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+        </g></g>
+      </g>
+
+      <!-- ================= TRAVEL BUDDY (suitcase) ================= -->
+      <g transform="translate(960 536)">
+        <g class="walker">
+          <g class="flip">
+            <g class="char" data-hop>
+              <g class="hopper">
+                <g class="bounce">
+                  <g class="leg l1"><path d="M-16 -14 V10" stroke="#1B78AA" stroke-width="6" stroke-linecap="round"/><ellipse cx="-12" cy="12" rx="11" ry="5" fill="#FF8A3D"/></g>
+                  <g class="leg l2"><path d="M16 -14 V10" stroke="#1B78AA" stroke-width="6" stroke-linecap="round"/><ellipse cx="20" cy="12" rx="11" ry="5" fill="#FF8A3D"/></g>
+                  <path d="M-16 -80 V-92 H16 V-80" stroke="#1B78AA" stroke-width="7" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                  <rect x="-44" y="-82" width="88" height="70" rx="14" fill="#4FB6EA" stroke="#1B78AA" stroke-width="5"/>
+                  <rect x="-44" y="-44" width="88" height="8" fill="#FFC93C"/>
+                  <rect x="-30" y="-76" width="60" height="30" rx="14" fill="#fff" opacity=".92"/>
+                  <g class="hat">
+                    <ellipse cx="0" cy="-94" rx="40" ry="9" fill="#FFD76A" stroke="#D99A00" stroke-width="4"/>
+                    <path d="M-22 -96 Q-20 -122 0 -122 Q20 -122 22 -96Z" fill="#FFC93C" stroke="#D99A00" stroke-width="4" stroke-linejoin="round"/>
+                    <path d="M-21 -102 H21" stroke="#F05A4F" stroke-width="5"/>
+                  </g>
+                  <ellipse class="blink" cx="-12" cy="-62" rx="5" ry="7.5" fill="#1d3a10"/>
+                  <ellipse class="blink" cx="12" cy="-62" rx="5" ry="7.5" fill="#1d3a10"/>
+                  <circle cx="-10.5" cy="-65" r="1.8" fill="#fff"/><circle cx="13.5" cy="-65" r="1.8" fill="#fff"/>
+                  <path d="M-10 -53 Q0 -43 10 -53" stroke="#1d3a10" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+                  <circle cx="26" cy="-24" r="9" fill="#fff" stroke="#58B226" stroke-width="3"/>
+                  <path d="M17 -24 H35 M26 -33 Q20 -24 26 -15 M26 -33 Q32 -24 26 -15" stroke="#58B226" stroke-width="2" fill="none"/>
+                  <rect x="-40" y="-30" width="14" height="20" rx="3" fill="#F05A4F"/>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+
+      <!-- ================= ROAD ================= -->
+      <rect x="-10" y="548" width="1220" height="60" fill="#4A5866"/>
+      <rect x="-10" y="545" width="1220" height="6" fill="#E8EEF2"/>
+      <path class="road-dash" d="M-10 578 H1210" stroke="#fff" stroke-width="4" stroke-dasharray="30 24"/>
+
+      <!-- bike (upper lane, rides left) -->
+      <g transform="translate(0 566)">
+        <g class="bike-go">
+          <g transform="scale(-.72 .72)">
+            <g class="bike-bob">
+              <ellipse cx="0" cy="2" rx="46" ry="4" fill="#000" opacity=".18"/>
+              <g transform="translate(-10 -50)">
+                <g class="pedal pb"><path d="M0 0 L6 22 L2 40" stroke="#1B78AA" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><ellipse cx="6" cy="41" rx="8" ry="4" fill="#2b3a42"/></g>
+              </g>
+              <g transform="translate(-26 -17)"><g class="wheel"><circle r="17" fill="none" stroke="#2b3a42" stroke-width="4"/><path d="M-17 0 H17 M0 -17 V17 M-12 -12 L12 12 M12 -12 L-12 12" stroke="#9AA7B2" stroke-width="1.5"/><circle r="3" fill="#2b3a42"/></g></g>
+              <g transform="translate(26 -17)"><g class="wheel"><circle r="17" fill="none" stroke="#2b3a42" stroke-width="4"/><path d="M-17 0 H17 M0 -17 V17 M-12 -12 L12 12 M12 -12 L-12 12" stroke="#9AA7B2" stroke-width="1.5"/><circle r="3" fill="#2b3a42"/></g></g>
+              <g stroke="#FF8A3D" stroke-width="5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M-26 -17 L-2 -17 L16 -44"/>
+                <path d="M-26 -17 L-10 -46 L16 -44"/>
+                <path d="M-2 -17 L-10 -46"/>
+                <path d="M16 -44 L26 -17"/>
+              </g>
+              <path d="M16 -44 L12 -54 L22 -56" stroke="#2b3a42" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M-17 -48 H-3" stroke="#2b3a42" stroke-width="5" stroke-linecap="round"/>
+              <path d="M-10 -50 L6 -72" stroke="#29A3E0" stroke-width="10" stroke-linecap="round"/>
+              <path d="M6 -72 L18 -56" stroke="#29A3E0" stroke-width="6" stroke-linecap="round"/>
+              <circle cx="10" cy="-85" r="10" fill="#FFE0BD" stroke="#C9936A" stroke-width="3"/>
+              <path d="M-1 -86 Q9 -104 21 -87Z" fill="#7C5CFF" stroke="#4B33C2" stroke-width="2.5" stroke-linejoin="round"/>
+              <circle cx="14" cy="-85" r="1.8" fill="#1d3a10"/>
+              <path d="M10 -80 Q15 -77 19 -81" stroke="#1d3a10" stroke-width="2" fill="none" stroke-linecap="round"/>
+              <g transform="translate(-10 -50)"><g class="pedal"><path d="M0 0 L6 22 L2 40" stroke="#2b3a42" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/><ellipse cx="6" cy="41" rx="8" ry="4" fill="#F05A4F"/></g></g>
+            </g>
+          </g>
+        </g>
+      </g>
+
+      <!-- car (lower lane, drives right) -->
+      <g transform="translate(0 594)">
+        <g class="car-go">
+          <g transform="scale(.8)">
+            <g class="car-bump">
+              <ellipse cx="0" cy="2" rx="62" ry="5" fill="#000" opacity=".2"/>
+              <circle class="exh e1" cx="-68" cy="-14" r="5" fill="#E8EEF2"/>
+              <circle class="exh e2" cx="-68" cy="-14" r="5" fill="#E8EEF2"/>
+              <polygon points="66,-34 130,-52 130,-10 66,-26" fill="#FFC93C" opacity=".25"/>
+              <path d="M-60 -14 V-30 Q-60 -40 -48 -40 H-36 Q-30 -66 -8 -66 H20 Q38 -66 46 -40 H56 Q66 -40 66 -28 V-14Z" fill="#F05A4F" stroke="#9E2F27" stroke-width="4" stroke-linejoin="round"/>
+              <path d="M-58 -24 H64" stroke="#FFC93C" stroke-width="4" stroke-linecap="round"/>
+              <path d="M-26 -42 Q-22 -60 -6 -60 H18 Q32 -60 38 -42Z" fill="#CBEBFF" stroke="#9E2F27" stroke-width="3" stroke-linejoin="round"/>
+              <circle cx="-6" cy="-50" r="6.5" fill="#fff"/><circle cx="16" cy="-50" r="6.5" fill="#fff"/>
+              <circle class="pupil" cx="-5" cy="-50" r="3" fill="#1d3a10"/><circle class="pupil" cx="17" cy="-50" r="3" fill="#1d3a10"/>
+              <circle cx="62" cy="-30" r="5" fill="#FFC93C" stroke="#D99A00" stroke-width="2"/>
+              <circle cx="-61" cy="-28" r="4" fill="#FF8A3D"/>
+              <path d="M40 -32 Q48 -26 56 -32" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round"/>
+              <g transform="translate(-34 -12)"><g class="wheel"><circle r="13" fill="#2b3a42"/><circle r="6" fill="#CFD8E0"/><path d="M-6 0 H6 M0 -6 V6" stroke="#2b3a42" stroke-width="2"/></g></g>
+              <g transform="translate(34 -12)"><g class="wheel"><circle r="13" fill="#2b3a42"/><circle r="6" fill="#CFD8E0"/><path d="M-6 0 H6 M0 -6 V6" stroke="#2b3a42" stroke-width="2"/></g></g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </svg>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
